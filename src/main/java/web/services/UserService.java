@@ -1,6 +1,5 @@
 package web.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import web.model.User;
@@ -14,7 +13,6 @@ import java.util.Optional;
 public class UserService {
     private final UsersRepository usersRepository;
 
-    @Autowired
     public UserService(UsersRepository usersRepository) {
         this.usersRepository = usersRepository;
     }

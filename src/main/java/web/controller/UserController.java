@@ -2,7 +2,6 @@ package web.controller;
 
 
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -15,7 +14,6 @@ import web.services.UserService;
 public class UserController {
 	private final UserService userService;
 
-	@Autowired
 	public UserController(UserService userService) {
 		this.userService = userService;
 	}
